@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="common-page" template="/layout/baseLayout.jsp">
+        <put-attribute name="title-content" value="/webPages/header.jsp" />
+        <put-attribute name="primary-content" value="" />
+        <put-attribute name="footer-content" value="/webPages/footer.jsp" />
+    </definition>
+
+    <definition name="login" extends="common-page">
+        <put-attribute name="primary-content" value="/webPages/login.jsp" />
+    </definition>
+</tiles-definitions>
